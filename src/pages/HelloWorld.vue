@@ -45,6 +45,7 @@
       </li>
     </ul>
     <i class="iconfont icon-download"></i>
+    <i class="iconfont icon-all"></i>
     <button @click="itemClick">Welcome</button>
   </div>
 </template>
@@ -61,6 +62,7 @@ export default {
   methods: {
     itemClick() {
       console.log('Welcome to Your Vue.js App')
+      this.$router.push('/SettingPage')
     }
   }
 }
