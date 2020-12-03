@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '../pages//HelloWorld'
 import SettingPage from '../pages/SettingPage'
 import HomePage from '../pages/HomePage'
 
@@ -11,11 +10,6 @@ export default new Router({
     {
       path: '/',
       redirect: { name: 'HomePage' }
-    },
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
     },
     {
       path: '/HomePage',

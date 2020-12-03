@@ -2,7 +2,7 @@
   <div class="header">
     <div class="left">
       <slot name="left">
-        <i class="iconfont icon-arrow-left" @click="leftClick"></i>
+        <i class="el-icon-back" @click="leftClick"></i>
       </slot>
     </div>
 
@@ -42,7 +42,7 @@ export default {
 
 <style scoped>
 .header {
-  height: 44px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +57,7 @@ export default {
 }
 .right {
   position: absolute;
-  right: 11px;
+  right: 200px;
   font-size: 0.875rem;
 }
 </style>
