@@ -1,10 +1,19 @@
 <template>
   <div class="container">
     <header-title title="设置" rightTxt="保存"></header-title>
-    <row-item title="密码设置" rightTxt="未设置" @itemClick="passwordSettingClick" >
+    <!-- RowItem使用案例1 -->
+    <row-item title="密码设置" rightTxt="未设置" @itemClick="passwordSettingClick">
+      <!-- 用于修改icon -->
       <i class="iconfont icon-bussiness-man"></i>
     </row-item>
+    <!-- RowItem使用案例2 -->
     <row-item title="关于我们" @itemClick="aboutUsClick" />
+    <!-- RowItem使用案例3 -->
+    <a href="https://cn.vuejs.org/">
+      <row-item title="Vue相关">
+        <img class="icon" src="../assets/images/logo.png" />
+      </row-item>
+    </a>
   </div>
 </template>
 
@@ -34,6 +43,7 @@ export default {
   created() {}
 }
 </script>
+
 <style scoped>
 .container {
   /* background-color: rgb(150, 164, 241); */
@@ -42,5 +52,9 @@ export default {
 .header_wrapper {
   height: 6.133333rem;
   background-size: 100% 100%;
+}
+.icon {
+  width: 17px;
+  height: 17px;
 }
 </style>

@@ -2,7 +2,10 @@
 <template>
   <div class="container" @click="itemClick">
     <div class="left">
-      <slot><i class="iconfont icon-atm-away"></i></slot>
+      <!-- 常用的点击item,这个是左边的icon,slot用于修改 -->
+      <slot>
+        <i class="iconfont icon-atm-away"></i>
+      </slot>
     </div>
 
     <div class="title" v-if="title">{{title}}</div>
@@ -21,7 +24,6 @@
 export default {
   name: 'HeaderTitle',
   props: {
-    icon: String,
     title: String,
     rightTxt: String
   },

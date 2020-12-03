@@ -7,6 +7,7 @@ import './assets/iconfont/iconfont.css'
 
 Vue.config.productionTip = false
 
+/** -------------------TODO:这些都是学习试验代码，可删除------------------------- */
 /** 注册全局组件 */
 Vue.component('aaa', {
   props: {
@@ -58,6 +59,7 @@ Vue.component('aaa', {
     }
   }
 })
+// ---------------------------------------删除分界线----------------------------
 
 /* eslint-disable no-new */
 new Vue({
